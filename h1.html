@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB Color Maker</title>
+    <link rel="stylesheet" href="c1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>RGB Color Maker</h1>
+        <div class="mode-switch">
+            <button id="manual-button" class="switch-button active">Manual</button>
+            <button id="auto-button" class="switch-button">Auto</button>
+        </div>
+        <div id="manual-mode" class="mode active">
+            <div class="inputs">
+                <label for="red">Red: </label>
+                <input type="range" id="red" min="0" max="255" value="0">
+                <span id="red-value">0</span>
+            </div>
+            <div class="inputs">
+                <label for="green">Green: </label>
+                <input type="range" id="green" min="0" max="255" value="0">
+                <span id="green-value">0</span>
+            </div>
+            <div class="inputs">
+                <label for="blue">Blue: </label>
+                <input type="range" id="blue" min="0" max="255" value="0">
+                <span id="blue-value">0</span>
+            </div>
+            <button id="generate">Generate Color</button>
+        </div>
+        <div id="auto-mode" class="mode">
+            <div class="inputs">
+                <label for="color-name">Color Name: </label>
+                <input type="text" id="color-name" placeholder="e.g., red">
+                <button id="search-color">Search Color</button>
+            </div>
+        </div>
+        <div class="color-display" id="color-display"></div>
+        <div class="color-code" id="color-code"></div>
+        <div class="color-list">
+            <h2>Available Colors:</h2>
+            <ul id="color-list"></ul>
+        </div>
+    </div>
+    <script src="j1.js"></script>
+</body>
+</html>
+
